@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("quiz.jpg"), #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-container {
+    width: 350px; /* Adjust width as needed */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* For glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: absolute; /* Positioning it absolutely within the relative parent */
+    left: 10%; /* Adjust this value to move it more to the left or right */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Ensure it's centered on the y-axis */
+}
+
+.register a {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 25px; /* Adds padding around the text */
+    background-color: blue; /* Sets the background color to blue */
+    color: white; /* Sets the text color to white */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 3px; /* Rounds the corners of the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.register a:hover {
+    background-color: darkblue; /* Darker blue on hover for visual feedback */
+}
+
+.wrapper {
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+
+.forget a {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 25px; /* Adds padding around the text */
+    background-color: red; /* Sets the background color to red */
+    color: white; /* Sets the text color to white */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 5px; /* Rounds the corners of the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.forget a:hover {
+    background-color: darkred; /* Darker red on hover for visual feedback */
+}
+
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 30px 0;
+  color: #fff;
+}
+
+#remember {
+  accent-color: #fff;
+}
+
+.forget label {
+  display: flex;
+  align-items: center;
+}
+
+.forget label p {
+  margin-left: 8px;
+}
+
+.forget a {
+  color: red; /* Changed to red */
+  text-decoration: none;
+}
+
+.forget a:hover {
+  color: darkred; /* Darker red on hover */
+}
+
+.wrapper a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: green; /* Changed to green */
+  color: #fff; /* Text color changed to white */
+  font-weight: 600;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+border-radius: 3px;
+font-size: 16px;
+border: 2px solid transparent;
+transition: 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: darkgreen; /* Darker green on hover for visual feedback */
+}
+
+.register {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  background: url('path_to_your_image.jpg') no-repeat center center; /* Replace with your image path */
+  background-size: cover;
+  text-align: center;
+}
+
+header {
+  padding: 20px 0;
+  background-color: rgba(0, 123, 255, 0.5); /* Semi-transparent blue to enhance visibility */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* White text for better visibility */
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #fff; /* White border */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  background-color: #fff; /* White background on hover */
+  color: #007BFF; /* Blue text on hover */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: transparent; /* Transparent background for dropdown */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 13px; /* Adds a gap between the dropdown and the main button */
+}
+
+.dropdown li {
+  display: block;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 10px 20px;
+  white-space: nowrap;
+  color: #fff; /* White text for readability */
+  text-decoration: none;
+  background-color: transparent; /* Transparent background for dropdown items */
+  border: none; /* No border for dropdown items */
+  transition: background-color 0.3s;
+}
+
+.dropdown li a:hover {
+  background-color: #fff; /* White background on hover */
+  color: #007BFF; /* Blue text on hover */
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #333;
+}
